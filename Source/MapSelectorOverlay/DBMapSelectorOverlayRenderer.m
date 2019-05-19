@@ -99,7 +99,9 @@ static const CGFloat kDefaultDashLineCoef = .01f;
     CGRect overlayRect = [self rectForMapRect:circlebounds];
     
     [self drawMainCircleOverlayIfNeddedOnMapRect:mapRect fillInside:_selectorOverlay.fillInside radius:radiusAtLatitude overlayRect:overlayRect inContext:context];
+    #if 0
     [self drawCenterPointIfNeddedOnMapRect:mapRect allowEditing:_selectorOverlay.editingCoordinate radius:radiusAtLatitude overlayRect:overlayRect inContext:context];
+    #endif
     [self drawRadiusPointIfNeddedOnMapRect:mapRect allowEditing:_selectorOverlay.editingRadius radius:radiusAtLatitude overlayRect:overlayRect inContext:context];
     [self drawRadiusLineIfNeddedOnMapRect:mapRect showText:_selectorOverlay.shouldShowRadiusText centerMapPoint:mpoint radius:radius overlayRect:overlayRect zoomScale:zoomScale inContext:context];
 }
