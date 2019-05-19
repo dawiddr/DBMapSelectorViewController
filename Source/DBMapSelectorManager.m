@@ -347,7 +347,7 @@ static const NSInteger kDefaultMaxDistance  = 10000;
             selectorAnnotationView.annotation = annotation;
         } else {
             selectorAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:selectorIdentifier];
-            selectorAnnotationView.pinColor = MKPinAnnotationColorGreen;
+            selectorAnnotationView.pinTintColor = MKPinAnnotationView.greenPinColor;
             selectorAnnotationView.draggable = YES;
         }
         selectorAnnotationView.selected = YES;
